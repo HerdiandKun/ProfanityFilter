@@ -249,7 +249,7 @@ class Check
      *
      * @return bool
      */
-    public function hasProfanity($string)
+    public function hasProfanity($string, $return = false)
     {
         if (empty($string)) {
             return false;
@@ -268,6 +268,9 @@ class Check
 
         foreach ($profanities as $profanity) {
             if ($this->stringHasProfanity($string, $profanity)) {
+                if($return)
+                    return $profanity;
+                
                 return true;
             }
         }
