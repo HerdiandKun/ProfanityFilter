@@ -17,7 +17,7 @@
     },
     "description": "Filters out profanities from strings.",
     "license": "MIT",
-    "name": "developerdino/profanity-filter",
+    "name": "herdiandkun/profanity-filter",
     "require": {
         "php": ">=7.2"
     },
